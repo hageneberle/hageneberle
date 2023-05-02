@@ -1,0 +1,85 @@
+<html>
+  <head>
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index - Hagen Eberle</title><br>
+      <style>
+        /* <a> */
+        a {
+        font-style: oblique;
+        font-style: bold;
+        font-size: 19px;
+        }
+        /* <p> */
+        p {
+        font-style: normal;
+        font-size: 17px;
+        font-weight: 300;
+        max-width: 700px;
+        }
+        /* body */
+        body {
+        margin: 25px;
+        }
+        /* images */
+        img {
+        display: block;
+        max-width: 60%;
+        height: auto;
+        margin: 0 0 30 0;
+        }
+        /* smaller screen text */   
+        @media screen and (max-width: 999px) {
+        p {
+        font-size: 16px;
+        max-width: 300px;
+        }
+        /* smaller screen images */
+        img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+        margin-left: 0;
+        }  
+      </style>  
+  </head>
+    <body>
+      <a style="color: #0000EE; margin-right: 10px" href="::::">&lt</a> <a style="color: #0000EE; margin-right: 10px" href="index.html">index</a> <a style="color: #0000EE" href="...">&gt</a><br>
+      <br>
+      <br>
+	<a style="color: #0000EE" href="Chance is a funny thing and it is easily mistaken for portent">Chance is a funny thing and it is easily mistaken for portent</a>
+      <br>
+	    <br>
+	<a style="color: #0000EE" href="Flat Earth.html">Flat Earth</a>
+      <br>
+	    <br>
+	<a style="color: #0000EE" href="(J)">(J)</a>
+      <br>
+	    <br>
+	<a style="color: #0000EE" href="Reenactment of Bucolic Green Hills (A Bliss Practice)">Reenactment of Bucolic Green Hills / A Bliss Practice</a>
+      <br>
+	    <br>
+	    <a style="color: #0000EE" href="ZIP.html">ZIP</a>
+      <br>
+	    <br>
+	     <a style="color: #0000EE" href="AZERTY amélioré {sfz}">AZERTY amélioré {sfz}</a>
+	    <br>
+	    <br>
+	    <a style="color: #0000EE" href="Preisverleihung.html">Preisverleihung</a>
+      <br>
+	    <br>
+	     <a style="color: #0000EE" href="DB.html">DB</a>
+	    <br>
+	    <br>
+	    <a style="color: #0000EE" href="pocket painting.html">Pocket Painting</a>
+	    <br>
+	    <br>
+      <br>
+      <br>
+      <br>
+    <footer>
+        <a style="color: #0000EE; margin-right: 10px" href="...">&lt</a> <a style="color: #0000EE; margin-right: 10px" href="index.html">index</a> <a style="color: #0000EE" href="...">&gt</a><br>
+        <br>
+        <a style="display: inline-block;">&copy; 2023 Hagen Eberle</a><br>
+    </footer>
+   </body>
+</html>
