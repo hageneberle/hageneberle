@@ -144,7 +144,7 @@
     </footer>
 	<script>
  /* click and zoom */
-  document.addEventListener("DOMContentLoaded", function() {
+   document.addEventListener("DOMContentLoaded", function() {
     const zoomableImages = document.querySelectorAll(".zoomable-image");
     const overlay = document.createElement("div");
     overlay.classList.add("zoomable-overlay");
@@ -153,7 +153,7 @@
     zoomableImages.forEach(image => {
       image.addEventListener("click", function(event) {
         event.preventDefault();
-        const largeImageURL = this.dataset.largeImageUrl;
+        const largeImageURL = this.href;
         showImageInLightbox(largeImageURL);
       });
     });
@@ -176,8 +176,6 @@
       closeButton.addEventListener("click", hideImageInLightbox);
 
       overlay.style.display = "block";
-      overlay.style.width = "100%";
-      overlay.style.height = "100%";
     }
 
     function hideImageInLightbox() {
