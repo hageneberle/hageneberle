@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <title>Hagen Eberle</title>
+  <style>
+    /* Your existing CSS styles here */
+
+    /* CSS for the image */
+    .zoomable-image img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    /* Lightbox overlay */
+    .zoomable-overlay {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.7);
+      z-index: 9999;
+    }
+
+    /* Lightbox image container */
+    .zoomable-content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    /* Lightbox image */
+    .zoomable-content img {
+      max-width: 90%;
+      max-height: 90%;
+    }
+
+    /* Close button for the lightbox */
+    .zoomable-close {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      color: #fff;
+      font-size: 24px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <p>The Healing Brush Tool (Adobe Photoshop, Ctrl/Cmd+J) retouches image content by matching the color and brightness of a selected area to its surroundings.</p>
+  <!-- Your other content goes here -->
+
+  <!-- Apply the zoomable-image class to the anchor tag wrapping the image -->
+  <a href="images/008.jpg" class="zoomable-image">
+    <img src="images/008.jpg" alt="image">
+    <p style="font-size: 12px; font-style: oblique; color: #9c9c9c; text-align: right">1</p>
+  </a>
+  
+  <!-- Your other content goes here -->
+
+  <script>
+    // Your existing JavaScript code here
+  </script>
+</body>
+</html>
