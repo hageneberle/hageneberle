@@ -145,44 +145,45 @@
     <script>
       /* click and zoom */
       document.addEventListener("DOMContentLoaded", function() {
-        const zoomableImages = document.querySelectorAll(".zoomable-image");
-        const overlay = document.createElement("div");
-        overlay.classList.add("zoomable-overlay");
-        document.body.appendChild(overlay);
+  const zoomableLinks = document.querySelectorAll("a.zoomable-image");
+  const overlay = document.createElement("div");
+  overlay.classList.add("zoomable-overlay");
+  document.body.appendChild(overlay);
 
-        zoomableImages.forEach(image => {
-          image.addEventListener("click", function(event) {
-            event.preventDefault();
-            const largeImageURL = this.querySelector("img").src; // Get the image source from the <img> tag
-            showImageInLightbox(largeImageURL);
-          });
-        });
+  zoomableLinks.forEach(link => {
+    link.addEventListener("click", function(event) {
+      event.preventDefault();
+      const largeImageURL = this.href; // Get the image source from the link's href attribute
+      showImageInLightbox(largeImageURL);
+    });
+  });
 
-        overlay.addEventListener("click", hideImageInLightbox);
+  overlay.addEventListener("click", hideImageInLightbox);
 
-        function showImageInLightbox(url) {
-          const content = document.createElement("div");
-          content.classList.add("zoomable-content");
-          const largeImage = document.createElement("img");
-          largeImage.src = url;
-          content.appendChild(largeImage);
-          overlay.appendChild(content);
+  function showImageInLightbox(url) {
+    const content = document.createElement("div");
+    content.classList.add("zoomable-content");
+    const largeImage = document.createElement("img");
+    largeImage.src = url;
+    content.appendChild(largeImage);
+    overlay.appendChild(content);
 
-          const closeButton = document.createElement("span");
-          closeButton.classList.add("zoomable-close");
-          closeButton.innerHTML = "&times;";
-          content.appendChild(closeButton);
+    const closeButton = document.createElement("span");
+    closeButton.classList.add("zoomable-close");
+    closeButton.innerHTML = "&times;";
+    content.appendChild(closeButton);
 
-          closeButton.addEventListener("click", hideImageInLightbox);
+    closeButton.addEventListener("click", hideImageInLightbox);
 
-          overlay.style.display = "block";
-        }
+    overlay.style.display = "block";
+  }
 
-        function hideImageInLightbox() {
-          overlay.style.display = "none";
-          overlay.innerHTML = "";
-        }
-      });
+  function hideImageInLightbox() {
+    overlay.style.display = "none";
+    overlay.innerHTML = "";
+  }
+});
+
     </script>
   </body>
 </html>
