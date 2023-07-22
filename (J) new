@@ -1,0 +1,98 @@
+<html>
+  <head>
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hagen Eberle</title><br>
+      <style>
+        /* <a> */
+        a {
+        font-style: oblique;
+        font-style: bold;
+        font-size: 11px;
+	color: #87abff;
+	font-family: Georgia;
+        }
+        /* <p> */
+        p {
+        font-style: normal;
+        font-size: 10px;
+        font-weight: 300;
+        max-width: 700px;
+	font-family: Arial;
+	color: #c4c4c4;
+        }
+        /* body */
+        body {
+        margin: 25px;
+	background-color: #2C2C2C;
+        }
+        /* images */
+        img {
+        display: block;
+        max-width: 60%;
+        height: auto;
+        margin: 40 0 0 0;
+        }
+        /* smaller screen text */   
+        @media screen and (max-width: 999px) {
+        p {
+        font-size: 12px;
+        max-width: 300px;
+        }
+        /* smaller screen images */
+        img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+        margin-left: 30 0 0 0;
+        } 
+      </style>  
+  </head>
+    <body>
+		<p>The Healing Brush Tool (Adobe Photoshop, Ctrl/Cmd+J) retouches image content by matching the color and brightness of a selected area to its surroundings.</p>
+		    <br>
+		    <br>
+		<p>9 
+		    <br>An analogue space is reproduced by photographical means. 
+        <br>A virtual space is created by digitally retouching the reproduction of the analogue space.
+    		<br>
+    		<br>0
+    		<br>The resulting change is translated into the analogue space via printed media.
+    		<br>
+    		<br>9
+    		<br>The analogue space is reproduced photographically once again. 
+        <br>A new virtual space is created by digitally retouching the reproduction of the new analogue space.</p>
+		    <br>
+		    <br>
+		<p>mailto:
+		    <br>
+		    <br>
+			<br>
+		contact@hageneberle.net</p>
+		    <br>
+		    <br>
+		<p>Upcoming:</p>
+			<br>
+				<a>xy (solo)</a>
+					<br>
+					<br>
+					<br>
+		<p>Ongoing:</p>
+			<br>
+				<a>Fondation Tschuess</a>
+					<br>
+					<br>
+					<br>
+		<p>Past:</p>
+	    	<br>
+				<a>xy</a>
+					<br>
+				    <br>
+				<a>xy</a>
+					<br>
+					<br>
+					<br>
+    <footer>
+        
+    </footer>
+   </body>
+</html>
