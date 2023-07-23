@@ -138,8 +138,7 @@
     <footer>
     </footer>
     <script>
-      /* click and zoom */
-      document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function() {
   const zoomableLinks = document.querySelectorAll("a.zoomable-image");
   const overlay = document.createElement("div");
   overlay.classList.add("zoomable-overlay");
@@ -148,12 +147,26 @@
   zoomableLinks.forEach(link => {
     link.addEventListener("click", function(event) {
       event.preventDefault();
-      const largeImageURL = this.href; // Get the image source from the link's href attribute
-      showImageInLightbox(largeImageURL);
+      const largeImageURL = this.href;
+      const isMobile = this.classList.contains("zoomable-mobile"); // Check if it's a mobile version
+
+      if (isMobile) {
+        // Show the image without the lightbox for mobile version
+        showImageWithoutLightbox(largeImageURL);
+      } else {
+        // Show the image in the lightbox for desktop version
+        showImageInLightbox(largeImageURL);
+      }
     });
   });
 
   overlay.addEventListener("click", hideImageInLightbox);
+
+  function showImageWithoutLightbox(url) {
+    // Replace this with your desired method to display the image on mobile
+    // For example, opening the image in a new tab/window:
+    window.open(url, "_blank");
+  }
 
   function showImageInLightbox(url) {
     const content = document.createElement("div");
@@ -178,6 +191,7 @@
     overlay.innerHTML = "";
   }
 });
+
 
     </script>
   </body>
