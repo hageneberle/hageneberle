@@ -15,18 +15,18 @@ body {
 /* Define the keyframes for the color change animation */
 @keyframes changeColor {
   0% {
-    color: #ff0000; /* Red */
+    color: #00ff00; /* Start with a green color */
   }
   25% {
-    color: #00ff00; /* Green */
+    color: #33ff33; /* Lighter green */
   }
   50% {
-    color: #0000ff; /* Blue */
+    color: #66ff66; /* Even lighter green */
   }
   75% {
-    color: #ffff00; /* Yellow */
+    color: #99ff99; /* Lightest green */
   }
   100% {
-    color: #ff00ff; /* Magenta */
+    color: #00ff00; /* Back to the starting green color */
   }
 }
