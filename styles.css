@@ -9,7 +9,7 @@ body {
 /* Define a class for elements with random color fonts */
 .random-color-font {
   /* Use a CSS animation to change colors randomly */
-  animation: changeColor 5s infinite;
+  animation: changeColor 3s infinite;
 }
 
 /* Define the keyframes for the color change animation */
