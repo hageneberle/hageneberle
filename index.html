@@ -1,14 +1,134 @@
 <!DOCTYPE html>
-<html>
-  <head>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Index Hagen Eberle</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Deine Galerie / Künstler Website</title>
+    <style>
+        /* Grundlegendes CSS für ein schlichtes Design */
+
+        body {
+            font-family: sans-serif; /* Schlichte Standardschrift */
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4; /* Heller Hintergrund */
+            color: #333; /* Dunkle Textfarbe */
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #fff; /* Weisser Header */
+            padding: 20px;
+            text-align: center;
+            border-bottom: 1px solid #eee; /* Feine Linie unter dem Header */
+        }
+
+        nav {
+            background-color: #fff;
+            padding: 10px 20px;
+            border-bottom: 1px solid #eee;
+            text-align: center; /* Zentrierte Navigation */
+        }
+
+        nav ul {
+            list-style: none; /* Listenpunkte entfernen */
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline; /* Navigation horizontal anzeigen */
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none; /* Unterstreichung von Links entfernen */
+            color: #555; /* Farbe der Navigationslinks */
+            font-weight: bold;
+            padding: 5px 10px;
+        }
+
+        main {
+            padding: 20px;
+            display: grid; /* Grid-Layout für die Galerie */
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive Spalten */
+            gap: 20px; /* Abstand zwischen den Grid-Elementen */
+            max-width: 1200px; /* Maximale Breite des Inhalts */
+            margin: 20px auto; /* Zentriert den Inhalt auf der Seite */
+        }
+
+        .gallery-item {
+            background-color: #fff;
+            border: 1px solid #ddd; /* Feiner Rahmen um die Galerie-Elemente */
+            padding: 10px;
+            text-align: center;
+        }
+
+        .gallery-item img {
+            max-width: 100%; /* Bilder an die Containerbreite anpassen */
+            height: auto;
+            display: block; /* Verhindert zusätzlichen Abstand unter den Bildern */
+            margin-bottom: 10px;
+        }
+
+        .gallery-item p {
+            margin: 0;
+            font-size: 0.9em;
+            color: #777; /* Dezentere Bildbeschreibungen */
+        }
+
+        footer {
+            background-color: #fff;
+            padding: 20px;
+            text-align: center;
+            border-top: 1px solid #eee; /* Feine Linie über dem Footer */
+            margin-top: 40px;
+            color: #777; /* Dezenter Text im Footer */
+        }
+
+        /*  Weitere Anpassungen für 'Slickness' könnten sein:
+            - Feinere Typografie (andere Schriftarten,  Abstand zwischen Buchstaben/Zeilen)
+            - Mehr Weissraum
+            - Animationen/Übergänge (mit CSS oder JavaScript)
+            - Fokus auf hochwertige Bilder
+            - Responsive Design Optimierung für verschiedene Bildschirmgrössen
+        */
+    </style>
 </head>
-  <body>
-<a style="color: #FFFFFF;" href="index">Index</a><br>
-<br>
-<footer>
+<body>
+
+    <header>
+        <h1>Deine Galerie / Künstler Name</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Ausstellungen</a></li>
+            <li><a href="#">Künstler</a></li>
+            <li><a href="#">Über uns</a></li>
+            <li><a href="#">Kontakt</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="gallery-item">
+            <img src="platzhalter-bild1.jpg" alt="Bild 1 Beschreibung">
+            <p>Bildtitel 1</p>
+        </div>
+        <div class="gallery-item">
+            <img src="platzhalter-bild2.jpg" alt="Bild 2 Beschreibung">
+            <p>Bildtitel 2</p>
+        </div>
+        <div class="gallery-item">
+            <img src="platzhalter-bild3.jpg" alt="Bild 3 Beschreibung">
+            <p>Bildtitel 3</p>
+        </div>
+        </main>
+
+    <footer>
+        <p>© 2023 Deine Galerie / Künstler Name. Alle Rechte vorbehalten.</p>
     </footer>
+
 </body>
 </html>
