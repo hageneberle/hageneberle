@@ -6,11 +6,12 @@
   <title>Startseite - Meine Website</title>
   <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body class="light-mode">
   <header>
     <nav class="breadcrumb">
       <a href="/index.html">Startseite</a>
     </nav>
+    <button id="mode-toggle">🌞 Tag/Nacht</button>
   </header>
 
   <main>
@@ -25,5 +26,22 @@
   <footer>
     <p>&copy; 2025 Meine Website</p>
   </footer>
+
+  <script>
+    const toggleBtn = document.getElementById("mode-toggle");
+    const body = document.body;
+
+    toggleBtn.addEventListener("click", () => {
+      body.classList.toggle("light-mode");
+      body.classList.toggle("dark-mode");
+
+      // Symbol wechseln
+      if (body.classList.contains("light-mode")) {
+        toggleBtn.textContent = "🌞 Tag/Nacht";
+      } else {
+        toggleBtn.textContent = "🌙 Tag/Nacht";
+      }
+    });
+  </script>
 </body>
 </html>
