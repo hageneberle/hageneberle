@@ -1,47 +1,35 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Startseite - Meine Website</title>
+  <title>Belhocine & Eberle – Proposal MoCA Biennal</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body class="light-mode">
   <header>
+    <h1>Belhocine & Eberle</h1>
     <nav class="breadcrumb">
-      <a href="/index.html">Startseite</a>
+      <a href="index.html">Home</a>
     </nav>
-    <button id="mode-toggle">🌞 Tag/Nacht</button>
+    <nav class="main-nav">
+      <a href="proposal.html">Proposal</a>
+      <a href="benjamin.html">Benjamin</a>
+      <a href="hagen.html">Hagen</a>
+      <a href="works.html">Works</a>
+    </nav>
   </header>
 
   <main>
-    <h1>Willkommen</h1>
-    <p>Dies ist die Startseite. Wähle einen Bereich:</p>
-    <ul>
-      <li><a href="/about/index.html">Über uns</a></li>
-      <li><a href="/contact/index.html">Kontakt</a></li>
-    </ul>
+    <h2>Proposal for MoCA Biennal for Young Artists</h2>
+    <p><em>Regarding Landscape as an Attitude, 1979/80</em></p>
+    <p>By <strong>Benjamin Djamel Belhocine</strong> & <strong>Hagen Eberle</strong></p>
+
+    <p><a href="proposal.html">Read full proposal →</a></p>
   </main>
 
   <footer>
-    <p>&copy; 2025 Meine Website</p>
+    <p>&copy; 2025 Belhocine & Eberle</p>
   </footer>
-
-  <script>
-    const toggleBtn = document.getElementById("mode-toggle");
-    const body = document.body;
-
-    toggleBtn.addEventListener("click", () => {
-      body.classList.toggle("light-mode");
-      body.classList.toggle("dark-mode");
-
-      // Symbol wechseln
-      if (body.classList.contains("light-mode")) {
-        toggleBtn.textContent = "🌞 Tag/Nacht";
-      } else {
-        toggleBtn.textContent = "🌙 Tag/Nacht";
-      }
-    });
-  </script>
 </body>
 </html>
