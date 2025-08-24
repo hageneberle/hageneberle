@@ -1,32 +1,58 @@
-/* styles.css */
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-/* Set a static background color for the entire website */
 body {
-  background-color: #000000; /* Light gray with a slight greenish tone */
+  font-family: system-ui, sans-serif;
+  background: #fafafa;
+  color: #333;
+  line-height: 1.6;
+  padding: 1rem;
 }
 
-
-/* Define a class for elements with random color fonts */
-.random-color-font {
-  /* Use a CSS animation to change colors randomly */
-  animation: changeColor 6s infinite;
+/* Breadcrumb-Navigation */
+.breadcrumb {
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
 }
 
-/* Define the keyframes for the color change animation */
-@keyframes changeColor {
-  0% {
-    color: #f0f0f0; /* Background color */
-  }
-  20% {
-    color: #00A86B; /* Jade Green */
-  }
-  50% {
-    color: #f0f0f0; /* Background color*/
-  }  
-  70% {
-    color: #FF5733; /* Boiling Red */
-  }
-  100% {
-    color: #f0f0f0; /* Back to the background color */
-  }
+.breadcrumb a {
+  text-decoration: none;
+  color: #0073e6;
+}
+
+.breadcrumb a:hover {
+  text-decoration: underline;
+}
+
+.breadcrumb span {
+  color: #555;
+}
+
+/* Listen als Ordnerstruktur */
+main ul {
+  list-style-type: none;
+  margin-top: 1rem;
+}
+
+main ul li {
+  margin: 0.5rem 0;
+  padding-left: 1.2rem;
+  position: relative;
+}
+
+main ul li::before {
+  content: "📂";
+  position: absolute;
+  left: 0;
+}
+
+footer {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 0.85rem;
+  color: #666;
 }
