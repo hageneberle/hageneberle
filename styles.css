@@ -7,32 +7,36 @@
 
 body {
   font-family: system-ui, sans-serif;
-  background: #fafafa;
-  color: #333;
+  background: #ffffff;   /* alles weiß */
+  color: #000000;        /* schwarzer Text */
   line-height: 1.6;
   padding: 1rem;
 }
 
-/* Breadcrumb-Navigation */
+/* Breadcrumb */
 .breadcrumb {
   font-size: 0.9rem;
   margin-bottom: 1rem;
 }
 
-.breadcrumb a {
+/* Links */
+a {
+  color: #000000;       /* schwarz */
+  text-decoration: underline; /* unterstrichen */
+  font-style: italic;   /* kursiv */
+}
+
+a:hover {
+  color: #333333;       /* leicht grauschwarz beim Hover */
+}
+
+/* Normale Texte */
+p, span, li {
+  font-style: normal;   /* Text bleibt normal */
   text-decoration: none;
-  color: #0073e6;
 }
 
-.breadcrumb a:hover {
-  text-decoration: underline;
-}
-
-.breadcrumb span {
-  color: #555;
-}
-
-/* Listen als Ordnerstruktur */
+/* Listen mit "Ordner"-Symbol */
 main ul {
   list-style-type: none;
   margin-top: 1rem;
@@ -50,9 +54,9 @@ main ul li::before {
   left: 0;
 }
 
+/* Footer */
 footer {
   text-align: center;
   margin-top: 2rem;
   font-size: 0.85rem;
-  color: #666;
 }
