@@ -7,10 +7,20 @@
 
 body {
   font-family: system-ui, sans-serif;
-  background: #ffffff;   /* alles weiß */
-  color: #000000;        /* schwarzer Text */
   line-height: 1.6;
   padding: 1rem;
+}
+
+/* Tagmodus */
+body.light-mode {
+  background: #ffffff;
+  color: #000000;
+}
+
+/* Nachtmodus */
+body.dark-mode {
+  background: #000000;
+  color: #ffffff;
 }
 
 /* Breadcrumb */
@@ -21,22 +31,25 @@ body {
 
 /* Links */
 a {
-  color: #000000;       /* schwarz */
-  text-decoration: underline; /* unterstrichen */
-  font-style: italic;   /* kursiv */
+  text-decoration: underline;
+  font-style: italic;
 }
 
-a:hover {
-  color: #333333;       /* leicht grauschwarz beim Hover */
+body.light-mode a {
+  color: #000000;
+}
+
+body.dark-mode a {
+  color: #ffffff;
 }
 
 /* Normale Texte */
 p, span, li {
-  font-style: normal;   /* Text bleibt normal */
+  font-style: normal;
   text-decoration: none;
 }
 
-/* Listen mit "Ordner"-Symbol */
+/* Listen */
 main ul {
   list-style-type: none;
   margin-top: 1rem;
@@ -52,6 +65,21 @@ main ul li::before {
   content: "📂";
   position: absolute;
   left: 0;
+}
+
+/* Schalter */
+#mode-toggle {
+  background: none;
+  border: 1px solid #888;
+  padding: 0.3rem 0.8rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  margin-left: 1rem;
+}
+
+#mode-toggle:hover {
+  background: #eee;
 }
 
 /* Footer */
